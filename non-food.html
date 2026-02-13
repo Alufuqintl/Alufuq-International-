@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Food Products | Alufuq International</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Al'ufuq Logo">
+                Al'ufuq <span>International L.L.C.</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="horeca.html">HORECA Solutions</a></li>
+                <li><a href="export.html">Export Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span>&#9776;</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="category-hero" style="background-image: url('assets/nonfood.jpg');">
+        <div class="hero-content">
+            <h1 style="color: white; text-shadow: 2px 2px 10px rgba(0,0,0,0.5);">Non-Food Supplies</h1>
+            <p>Essential Hygiene & Kitchen Operation Solutions</p>
+        </div>
+    </section>
+
+    <!-- Brand Ticker -->
+    <div class="brand-ticker">
+        <div class="ticker-content">
+            <div class="brand-item"><img src="assets/brand-n1.png" alt="Non-Food Brand 1"> </div>
+            <div class="brand-item"><img src="assets/brand-n2.png" alt="Non-Food Brand 2"> </div>
+            <div class="brand-item"><img src="assets/brand-n3.png" alt="Non-Food Brand 3"> </div>
+            <div class="brand-item"><img src="assets/brand-n4.png" alt="Non-Food Brand 4"> </div>
+            <div class="brand-item"><img src="assets/brand-n5.png" alt="Non-Food Brand 5"> </div>
+            <div class="brand-item"><img src="assets/brand-n6.png" alt="Non-Food Brand 6"> </div>
+            <!-- Duplicate for infinite scroll -->
+            <div class="brand-item"><img src="assets/brand-n1.png" alt="Non-Food Brand 1"> </div>
+            <div class="brand-item"><img src="assets/brand-n2.png" alt="Non-Food Brand 2"> </div>
+            <div class="brand-item"><img src="assets/brand-n3.png" alt="Non-Food Brand 3"> </div>
+            <div class="brand-item"><img src="assets/brand-n4.png" alt="Non-Food Brand 4"> </div>
+            <div class="brand-item"><img src="assets/brand-n5.png" alt="Non-Food Brand 5"> </div>
+            <div class="brand-item"><img src="assets/brand-n6.png" alt="Non-Food Brand 6"> </div>
+        </div>
+    </div>
+
+    <div class="small-cube-grid">
+        <div class="small-cube-item"
+            onclick="openProductModal('DISHWASHING LIQUID', 'Heavy-duty concentrated formula for professional kitchen hygiene.', ['12 X 1L', '24X 500ML' , '3L' , '5L' , '10L' , '20L  '], 'assets/nf-dishwash.png')">
+            <div class="small-cube-img"><img src="assets/nf-dishwash.png" alt="Dishwashing Liquid"></div>
+            <h3>Dishwashing Liquid</h3>
+            <p>Heavy-duty concentrated formula for professional kitchen hygiene.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('HAND SANITIZER', '70% Alcohol-based gel for effective hand disinfection.', ['12 X 500ML ' , '24 X 250ML ' , '1 X 5L '], 'assets/nf-sanitizer.png')">
+            <div class="small-cube-img"><img src="assets/nf-sanitizer.png" alt="Hand Sanitizer"></div>
+            <h3>Hand Sanitizer</h3>
+            <p>70% Alcohol gel for effective disinfection.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('DISINFECTANT', 'Fast-acting spray for sanitizing food contact surfaces.', ['12 X 750ML' , '24 X 500ML  ' , '1 X 5L'], 'assets/nf-disinfectant.png')">
+            <div class="small-cube-img"><img src="assets/nf-disinfectant.png" alt="Surface Disinfectant"></div>
+            <h3>Disinfectant</h3>
+            <p>Sanitizing spray for food contact surfaces.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('PROTECTIVE GLOVES', 'High-quality latex or vinyl powder-free gloves for food safety.', ['10 X 100PCS'], 'assets/nf-gloves.png')">
+            <div class="small-cube-img"><img src="assets/nf-gloves.png" alt="Disposable Gloves"></div>
+            <h3>Protective Gloves</h3>
+            <p>Powder-free gloves for food safety.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('INDUSTRIAL WIPES', 'Highly absorbent cleaning cloths for heavy-duty industrial use.', ['1 X 10KG ROLL', '12 X 50PCS' , '100X100PCS'  ], 'assets/nf-wipes.png')">
+            <div class="small-cube-img"><img src="assets/nf-wipes.png" alt="Industrial Wipes"></div>
+            <h3>Industrial Wipes</h3>
+            <p>Absorbent cloths for heavy-duty use.</p>
+            <span>View</span>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="product-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProductModal()">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalTitle">Product Name</h2>
+                <p id="modalDesc">Detailed description goes here.</p>
+            </div>
+            <div class="modal-body">
+                <h3>Available Packaging Sizes</h3>
+                <div id="sizeGrid" class="size-grid">
+                    <!-- Sizes will be injected here -->
+                </div>
+                <div style="margin-top: 2rem; text-align: center;">
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%;">Inquire Now</a>
+                </div>
+                <div class="availability-note">
+                    * Based on availability for the packaging and branding variations.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Al'ufuq International L.L.C.</h4>
+                <p>Your trusted partner in food trading and export services.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-links">
+                    <li>Dubai, United Arab Emirates</li>
+                    <li>sales@alufuqintl.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Alufuq International. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

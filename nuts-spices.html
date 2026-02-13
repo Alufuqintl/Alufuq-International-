@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuts & Spices | Alufuq International</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Al'ufuq Logo">
+                Al'ufuq <span>International L.L.C.</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="horeca.html">HORECA Solutions</a></li>
+                <li><a href="export.html">Export Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span>&#9776;</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="category-hero" style="background-image: url('assets/nuts.jpg');">
+        <div class="hero-content">
+            <h1 style="color: white; text-shadow: 2px 2px 10px rgba(0,0,0,0.5);">Nuts & Spices</h1>
+            <p>Premium Grade Nuts and Aromatic Spices from Global Markets</p>
+        </div>
+    </section>
+
+    <!-- Brand Ticker -->
+    <div class="brand-ticker">
+        <div class="ticker-content">
+            <div class="brand-item"><img src="assets/brand-ns1.png" alt="Nuts & Spices Brand 1"> </div>
+            <div class="brand-item"><img src="assets/brand-ns2.png" alt="Nuts & Spices Brand 2"> </div>
+            <div class="brand-item"><img src="assets/brand-ns3.png" alt="Nuts & Spices Brand 3"> </div>
+            <div class="brand-item"><img src="assets/brand-ns4.png" alt="Nuts & Spices Brand 4"> </div>
+            <div class="brand-item"><img src="assets/brand-ns5.png" alt="Nuts & Spices Brand 5"> </div>
+            <div class="brand-item"><img src="assets/brand-ns6.png" alt="Nuts & Spices Brand 6"> </div>
+            <!-- Duplicate for infinite scroll -->
+            <div class="brand-item"><img src="assets/brand-ns1.png" alt="Nuts & Spices Brand 1"> </div>
+            <div class="brand-item"><img src="assets/brand-ns2.png" alt="Nuts & Spices Brand 2"> </div>
+            <div class="brand-item"><img src="assets/brand-ns3.png" alt="Nuts & Spices Brand 3"> </div>
+            <div class="brand-item"><img src="assets/brand-ns4.png" alt="Nuts & Spices Brand 4"> </div>
+            <div class="brand-item"><img src="assets/brand-ns5.png" alt="Nuts & Spices Brand 5"> </div>
+            <div class="brand-item"><img src="assets/brand-ns6.png" alt="Nuts & Spices Brand 6"> </div>
+        </div>
+    </div>
+
+    <div class="small-cube-grid">
+        <div class="small-cube-item"
+            onclick="openProductModal('WHOLE ALMONDS', 'Premium selection of whole raw almonds, high in nutrients.', ['10 X 1KG', '20 X 500G', '20 X 250G'], 'assets/ns-almonds.png')">
+            <div class="small-cube-img"><img src="assets/ns-almonds.png" alt="Whole Almonds"></div>
+            <h3>Whole Almonds</h3>
+            <p>Premium raw almonds, nutrient-rich.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('CASHEW NUTS', 'Grade W240/W320 cashew nuts, crunchy and buttery.', ['10 X 1KG', '20 X 500G', '20 X 250G'], 'assets/ns-cashews.png')">
+            <div class="small-cube-img"><img src="assets/ns-cashews.png" alt="Cashew Nuts"></div>
+            <h3>Cashew Nuts</h3>
+            <p>Crunchy and buttery high-grade cashews.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('PISTACHIO KERNELS', 'High-quality pistachio kernels for snacking and confectionery.', ['10 X 1KG', '20 X 500G', '20 X 250G'], 'assets/ns-pistachios.png')">
+            <div class="small-cube-img"><img src="assets/ns-pistachios.png" alt="Pistachio Kernels"></div>
+            <h3>Pistachio Kernels</h3>
+            <p>High-quality kernels for snacking.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('BLACK PEPPER', 'Aromatic whole or powdered black pepper for seasoning.', ['10 X 1KG', '20 X 500G', '20 X 250G'], 'assets/ns-pepper.png')">
+            <div class="small-cube-img"><img src="assets/ns-pepper.png" alt="Black Pepper"></div>
+            <h3>Black Pepper</h3>
+            <p>Aromatic pepper for perfect seasoning.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('CINNAMON STICKS', 'Authentic Ceylon cinnamon sticks for aroma and flavor.', ['1 X 10KG CARTON'], 'assets/ns-cinnamon.png')">
+            <div class="small-cube-img"><img src="assets/ns-cinnamon.png" alt="Cinnamon Sticks"></div>
+            <h3>Cinnamon Sticks</h3>
+            <p>Authentic aromatic Ceylon cinnamon.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('TURMERIC POWDER', 'Bright and earthy turmeric powder for culinary use.', ['10 X 1KG', '20 X 500G', '20 X 250GM'], 'assets/ns-turmeric.png')">
+            <div class="small-cube-img"><img src="assets/ns-turmeric.png" alt="Turmeric Powder"></div>
+            <h3>Turmeric Powder</h3>
+            <p>Bright and earthy culinary turmeric.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('GREEN CARDAMOM', 'Premium green cardamom pods with intense fragrance.', ['10 X 1KG', '20 X 500G', '20 X 250GM'], 'assets/ns-cardamom.png')">
+            <div class="small-cube-img"><img src="assets/ns-cardamom.png" alt="Green Cardamom"></div>
+            <h3>Green Cardamom</h3>
+            <p>Intensely fragrant green cardamom pods.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('WALNUT KERNELS', 'Rich and earthy walnut kernels, perfect for baking.', ['10 X 1KG', '20 X 500G', '20 X 250GM'], 'assets/ns-walnuts.png')">
+            <div class="small-cube-img"><img src="assets/ns-walnuts.png" alt="Walnut Kernels"></div>
+            <h3>Walnut Kernels</h3>
+            <p>Rich kernels perfect for baking.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('NUTMEG', 'A warm, slightly sweet, and nutty flavor,.', ['10 X 1KG', '20 X 500G', '20 X 250GM'], 'assets/ns-nutmeg.png')">
+            <div class="small-cube-img"><img src="assets/ns-nutmeg.png" alt="Walnut Kernels"></div>
+            <h3>Nutmeg</h3>
+            <p>A warm, slightly sweet, and nutty flavor.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('CLOVES', 'The aromatic flower buds .', ['10 X 1KG', '20 X 500G', '20 X 250GM'], 'assets/ns-cloves.png')">
+            <div class="small-cube-img"><img src="assets/ns-cloves.png" alt="Cloves"></div>
+            <h3>Cloves </h3>
+            <p>The aromatic flower buds .</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('FENUGREEK SEEDS', 'Warm, citrusy, and slightly sweet flavor.', ['10 X 1KG', '20 X 500G', '20 X 250GM'], 'assets/ns-fenugreek.png')">
+            <div class="small-cube-img"><img src="assets/ns-fenugreek.png" alt="Fenugreek Seeds"></div>
+            <h3>Fenugreek Seeds</h3>
+            <p>Warm, citrusy, and slightly sweet flavor.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('CORIANDER SEEDS', 'Lemony citrus flavor when crushed. warm, nutty, spicy, and orange-flavoured.', ['10 X 1KG', '20 X 500G', '20 X 250GM'], 'assets/ns-coriander.png')">
+            <div class="small-cube-img"><img src="assets/ns-coriander.png" alt="Coriander Seeds"></div>
+            <h3>Coriander Seeds</h3>
+            <p>Lemony citrus flavor when crushed. warm, nutty, spicy, and orange-flavoured.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('HAZEL NUT', 'Rich source of vitamins and minerals like vitamin E, manganese and copper   .', ['10 X 1KG', '20 X 500G', '20 X 250GM'], 'assets/ns-hazelnut.png')">
+            <div class="small-cube-img"><img src="assets/ns-hazelnut.png" alt="Hazel Nut"></div>
+            <h3>Hazel Nut</h3>
+            <p>Rich source of vitamins and minerals like vitamin E, manganese and copper.</p>
+            <span>View</span>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="product-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProductModal()">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalTitle">Product Name</h2>
+                <p id="modalDesc">Detailed description goes here.</p>
+            </div>
+            <div class="modal-body">
+                <h3>Available Packaging Sizes</h3>
+                <div id="sizeGrid" class="size-grid">
+                    <!-- Sizes will be injected here -->
+                </div>
+                <div style="margin-top: 2rem; text-align: center;">
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%;">Inquire Now</a>
+                </div>
+                <div class="availability-note">
+                    * Based on availability for the packaging and branding variations.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Al'ufuq International L.L.C.</h4>
+                <p>Your trusted partner in food trading and export services.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-links">
+                    <li>Dubai, United Arab Emirates</li>
+                    <li>sales@alufuqintl.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Alufuq International. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disposable & Packaging | Alufuq International</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Al'ufuq Logo">
+                Al'ufuq <span>International L.L.C.</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="horeca.html">HORECA Solutions</a></li>
+                <li><a href="export.html">Export Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span>&#9776;</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="category-hero" style="background-image: url('assets/Dis.jpg');">
+        <div class="hero-content">
+            <h1 style="color: white; text-shadow: 2px 2px 10px rgba(0,0,0,0.5);">Disposable & Packaging</h1>
+            <p>Eco-Friendly Solutions for Modern Food Service</p>
+        </div>
+    </section>
+
+    <!-- Brand Ticker -->
+    <div class="brand-ticker">
+        <div class="ticker-content">
+            <div class="brand-item"><img src="assets/brand-p1.png" alt="Packaging Brand 1"> </div>
+            <div class="brand-item"><img src="assets/brand-p2.png" alt="Packaging Brand 2"> </div>
+            <div class="brand-item"><img src="assets/brand-p3.png" alt="Packaging Brand 3"> </div>
+            <div class="brand-item"><img src="assets/brand-p4.png" alt="Packaging Brand 4"> </div>
+            <div class="brand-item"><img src="assets/brand-p5.png" alt="Packaging Brand 5"> </div>
+            <div class="brand-item"><img src="assets/brand-p6.png" alt="Packaging Brand 6"> </div>
+            <div class="brand-item"><img src="assets/brand-p7.png" alt="Packaging Brand 7"> </div>
+            <!-- Duplicate for infinite scroll -->
+            <div class="brand-item"><img src="assets/brand-p1.png" alt="Packaging Brand 1"> </div>
+            <div class="brand-item"><img src="assets/brand-p2.png" alt="Packaging Brand 2"> </div>
+            <div class="brand-item"><img src="assets/brand-p3.png" alt="Packaging Brand 3"> </div>
+            <div class="brand-item"><img src="assets/brand-p4.png" alt="Packaging Brand 4"> </div>
+            <div class="brand-item"><img src="assets/brand-p5.png" alt="Packaging Brand 5"> </div>
+            <div class="brand-item"><img src="assets/brand-p6.png" alt="Packaging Brand 6"> </div>
+            <div class="brand-item"><img src="assets/brand-p7.png" alt="Packaging Brand 7"> </div>
+            <div class="brand-item"><img src="assets/brand-p8.png" alt="Packaging Brand 8"> </div>
+        </div>
+    </div>
+
+    <div class="small-cube-grid">
+        <div class="small-cube-item"
+            onclick="openProductModal('CONTAINERS', 'Durable and heat-resistant food containers for takeaway and storage.', ['1 X 500PCS CARTON'], 'assets/pa-containers.png')">
+            <div class="small-cube-img"><img src="assets/pa-containers.png" alt="Microwavable Containers"></div>
+            <h3>Microwavable Containers</h3>
+            <p>Durable heat-resistant takeaway containers.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('KRAFT BAGS', 'Eco-friendly recycled kraft paper bags for sustainable packaging.', ['1 X 250PCS PACK'], 'assets/pa-kraft-bags.png')">
+            <div class="small-cube-img"><img src="assets/pa-kraft-bags.png" alt="Kraft Paper Bags"></div>
+            <h3>Kraft Paper Bags</h3>
+            <p>Eco-friendly bags for sustainable packaging.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('ALUMINUM FOIL', 'Heavy-duty industrial aluminum foil for food preservation and cooking.', ['6 X 150M ROLLS'], 'assets/pa-foil.png')">
+            <div class="small-cube-img"><img src="assets/pa-foil.png" alt="Aluminum Foil"></div>
+            <h3>Aluminum Foil</h3>
+            <p>Heavy-duty foil for food preservation.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('BIO CUTLERY', 'Compostable and eco-friendly cutlery sets for modern food service.', ['1 X 1000PCS CARTON'], 'assets/pa-cutlery.png')">
+            <div class="small-cube-img"><img src="assets/pa-cutlery.png" alt="Bio Cutlery Sets"></div>
+            <h3>Bio Cutlery Sets</h3>
+            <p>Compostable cutlery for modern service.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('CLING FILM', 'High-stretch cling film for professional kitchen use and sealing.', ['4 X 300M ROLLS'], 'assets/pa-cling-film.png')">
+            <div class="small-cube-img"><img src="assets/pa-cling-film.png" alt="Cling Film"></div>
+            <h3>Cling Film</h3>
+            <p>High-stretch film for kitchen use.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('MAXI ROLLS', 'Made of high quality and with maximum absorbency.', ['6 X 150M ROLLS'], 'assets/pa-maxi-rolls.png')">
+            <div class="small-cube-img"><img src="assets/pa-maxi-rolls.png" alt="Aluminum Foil"></div>
+            <h3>Maxi Rolls</h3>
+            <p>Made of high quality and with maximum absorbency.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('PAPER NAPKINS', 'Made of high quality and with maximum absorbency.', ['6 X 150M ROLLS'], 'assets/pa-paper-napkins.png')">
+            <div class="small-cube-img"><img src="assets/pa-paper-napkins.png" alt="Aluminum Foil"></div>
+            <h3>Paper Napkins</h3>
+            <p>Made of high quality and with maximum absorbency.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('NITRILE POWDE FREE GLOVES', 'Made of high quality and with maximum quality.', ['10 X 100PCS'], 'assets/pa-nitrile-powder-free-gloves.png')">
+            <div class="small-cube-img"><img src="assets/pa-nitrile-powder-free-gloves.png" alt="Aluminum Foil"></div>
+            <h3>Nitrile Powder Free Gloves</h3>
+            <p>Made of high quality and with maximum quality.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('HAIR NETS', 'Soft and extremely lightweight helps you meet health codes and Serving you only the highest quality .', ['10 X 100PCS'], 'assets/pa-hair-nets.png')">
+            <div class="small-cube-img"><img src="assets/pa-hair-nets.png" alt="Aluminum Foil"></div>
+            <h3>Hair Nets</h3>
+            <p>Soft and extremely lightweight helps you meet health codes and Serving you only the highest quality.</p>
+            <span>View</span>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="product-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProductModal()">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalTitle">Product Name</h2>
+                <p id="modalDesc">Detailed description goes here.</p>
+            </div>
+            <div class="modal-body">
+                <h3>Available Packaging Sizes</h3>
+                <div id="sizeGrid" class="size-grid">
+                    <!-- Sizes will be injected here -->
+                </div>
+                <div style="margin-top: 2rem; text-align: center;">
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%;">Inquire Now</a>
+                </div>
+                <div class="availability-note">
+                    * Based on availability for the packaging and branding variations.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Al'ufuq International L.L.C.</h4>
+                <p>Your trusted partner in food trading and export services.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-links">
+                    <li>Dubai, United Arab Emirates</li>
+                    <li>sales@alufuqintl.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Alufuq International. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

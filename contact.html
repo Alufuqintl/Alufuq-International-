@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Alufuq International</title>
+    <meta name="description"
+        content="Get in touch with Alufuq International in Dubai for food trading inquiries, export quotes, or HORECA supply partnerships.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Al'ufuq Logo">
+                Al'ufuq <span>International L.L.C.</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="horeca.html">HORECA Solutions</a></li>
+                <li><a href="export.html">Export Services</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span>&#9776;</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero hero-contact"
+        style="background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1600'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center;">
+        <div class="hero-content fade-in">
+            <h1 style="color: white; text-shadow: 2px 2px 10px rgba(0,0,0,0.5);">Contact Us</h1>
+            <p style="color: white; text-shadow: 1px 1px 5px rgba(0,0,0,0.5);">We are ready to assist you with your
+                requirements.</p>
+        </div>
+    </section>
+
+    <!-- Conatct Info & Form -->
+    <section class="about-section">
+        <div class="about-preview" style="align-items: flex-start;">
+
+            <!-- Contact Info -->
+            <div class="about-text">
+                <h3>Get In Touch</h3>
+                <p>Have a question or need a quotation? Fill out the form or reach us directly.</p>
+
+                <div class="contact-details" style="margin-top: 2rem;">
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--primary-color);">Head Office</h4>
+                        <p>Office 123, Business Tower<br>Business Bay, Dubai, UAE</p>
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--primary-color);">Contact</h4>
+                        <p>Phone: +971 4 000 0000<br>Mobile: +971 50 000 0000<br>Email: sales@alufuqintl.com</p>
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--primary-color);">Working Hours</h4>
+                        <p>Mon - Sat: 9:00 AM - 6:00 PM<br>Sunday: Closed</p>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/971500000000" class="btn btn-primary"
+                    style="background: #25D366; color: white; border: none; margin-top: 1rem;">Chat on WhatsApp</a>
+
+                <div
+                    style="margin-top: 3rem; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <img src="https://images.unsplash.com/photo-1590650046871-92c887180603?auto=format&fit=crop&q=80&w=800"
+                        alt="Distribution Center" style="width: 100%; display: block;">
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="about-image"
+                style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 100%;">
+                <form action="#" method="POST">
+                    <div style="margin-bottom: 1rem;">
+                        <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Your
+                            Name</label>
+                        <input type="text" id="name" name="name" required
+                            style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="company" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Company
+                            Name</label>
+                        <input type="text" id="company" name="company"
+                            style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email
+                            Address</label>
+                        <input type="email" id="email" name="email" required
+                            style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Phone
+                            Number</label>
+                        <input type="tel" id="phone" name="phone" required
+                            style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="requirement"
+                            style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Product Requirement</label>
+                        <select id="requirement" name="requirement"
+                            style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px;">
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="HORECA Supply">HORECA Supply</option>
+                            <option value="Export Order">Export Order</option>
+                            <option value="Dairy & Cheese">Dairy & Cheese</option>
+                            <option value="Grocery">Grocery Options</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="message"
+                            style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message</label>
+                        <textarea id="message" name="message" rows="4" required
+                            style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary"
+                        style="width: 100%; border: none; cursor: pointer;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Placeholder -->
+    <section style="padding: 0;">
+        <div
+            style="width: 100%; height: 400px; background: #e0e0e0; display: flex; align-items: center; justify-content: center;">
+            <p style="color: #666; font-size: 1.5rem;">Google Map Embed Placeholder<br><span
+                    style="font-size: 1rem;">(Add iframe here)</span></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Al'ufuq International L.L.C.</h4>
+                <p>Your trusted partner in food trading and export services.</p>
+                <div class="social-icons">
+                    <a href="#">&#xf09a;</a>
+                    <a href="#">&#xf0e1;</a>
+                    <a href="#">&#xf16d;</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Solutions</h4>
+                <ul class="footer-links">
+                    <li><a href="horeca.html">HORECA Supply</a></li>
+                    <li><a href="export.html">Global Export</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-links">
+                    <li>Dubai, United Arab Emirates</li>
+                    <li>sales@alufuqintl.com</li>
+                    <li>+971 4 000 0000</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Alufuq International. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

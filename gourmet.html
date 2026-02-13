@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet & Specialty | Alufuq International</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Al'ufuq Logo">
+                Al'ufuq <span>International L.L.C.</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="horeca.html">HORECA Solutions</a></li>
+                <li><a href="export.html">Export Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span>&#9776;</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="category-hero"
+        style="background-image: url('https://images.unsplash.com/photo-1514986888952-8cd320577b68?auto=format&fit=crop&q=80&w=1600');">
+        <div class="hero-content">
+            <h1 style="color: white; text-shadow: 2px 2px 10px rgba(0,0,0,0.5);">Gourmet & Specialty</h1>
+            <p>Exclusive Ingredients for Fine Dining Establishments</p>
+        </div>
+    </section>
+
+    <!-- Brand Ticker -->
+    <div class="brand-ticker">
+        <div class="ticker-content">
+            <div class="brand-item"><img src="assets/brand-go1.png" alt="Gourmet Brand 1"> </div>
+            <div class="brand-item"><img src="assets/brand-go2.png" alt="Gourmet Brand 2"> </div>
+            <div class="brand-item"><img src="assets/brand-go3.png" alt="Gourmet Brand 3"> </div>
+            <div class="brand-item"><img src="assets/brand-go4.png" alt="Gourmet Brand 4"> </div>
+            <div class="brand-item"><img src="assets/brand-go5.png" alt="Gourmet Brand 5"> </div>
+            <div class="brand-item"><img src="assets/brand-go6.png" alt="Gourmet Brand 6"> </div>
+            <!-- Duplicate for infinite scroll -->
+            <div class="brand-item"><img src="assets/brand-go1.png" alt="Gourmet Brand 1"> </div>
+            <div class="brand-item"><img src="assets/brand-go2.png" alt="Gourmet Brand 2"> </div>
+            <div class="brand-item"><img src="assets/brand-go3.png" alt="Gourmet Brand 3"> </div>
+            <div class="brand-item"><img src="assets/brand-go4.png" alt="Gourmet Brand 4"> </div>
+            <div class="brand-item"><img src="assets/brand-go5.png" alt="Gourmet Brand 5"> </div>
+            <div class="brand-item"><img src="assets/brand-go6.png" alt="Gourmet Brand 6"> </div>
+        </div>
+    </div>
+
+    <div class="small-cube-grid">
+        <div class="small-cube-item"
+            onclick="openProductModal('TRUFFLE OIL', 'Infused with premium black truffles for a rich, earthy aroma.', ['1 X 250ML BOTTLE', '6 X 250ML CASE'], 'assets/go-truffle-oil.png')">
+            <div class="small-cube-img"><img src="assets/go-truffle-oil.png" alt="Black Truffle Oil"></div>
+            <h3>Truffle Oil</h3>
+            <p>Infused with premium black truffles.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('SAFFRON', 'Pure Grade 1 saffron threads for vibrant color and flavor.', ['1 X 10G JAR', '1 X 100G TIN'], 'assets/go-saffron.png')">
+            <div class="small-cube-img"><img src="assets/go-saffron.png" alt="Saffron (Grade 1)"></div>
+            <h3>Saffron</h3>
+            <p>Pure Grade 1 saffron threads.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('BALSAMIC VINEGAR', 'Traditional balsamic vinegar from Modena, aged in wooden barrels.', ['1 X 500ML BOTTLE'], 'assets/go-balsamic.png')">
+            <div class="small-cube-img"><img src="assets/go-balsamic.png" alt="Aged Balsamic"></div>
+            <h3>Balsamic Vinegar</h3>
+            <p>Traditional aged balsamic from Modena.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('VANILLA BEANS', 'Premium Bourbon vanilla beans from Madagascar.', ['1 X 250G JAR'], 'assets/go-vanilla.png')">
+            <div class="small-cube-img"><img src="assets/go-vanilla.png" alt="Vanilla Beans"></div>
+            <h3>Vanilla Beans</h3>
+            <p>Premium Bourbon vanilla beans.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('SPECIALTY FATS', 'High-quality duck fat and foie gras for gourmet culinary use.', ['1 X 1KG TUB'], 'assets/go-fats.png')">
+            <div class="small-cube-img"><img src="assets/go-fats.png" alt="Specialty Fats"></div>
+            <h3>Specialty Fats</h3>
+            <p>High-quality culinary specialty fats.</p>
+            <span>View</span>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="product-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProductModal()">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalTitle">Product Name</h2>
+                <p id="modalDesc">Detailed description goes here.</p>
+            </div>
+            <div class="modal-body">
+                <h3>Available Packaging Sizes</h3>
+                <div id="sizeGrid" class="size-grid">
+                    <!-- Sizes will be injected here -->
+                </div>
+                <div style="margin-top: 2rem; text-align: center;">
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%;">Inquire Now</a>
+                </div>
+                <div class="availability-note">
+                    * Based on availability for the packaging and branding variations.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Al'ufuq International L.L.C.</h4>
+                <p>Your trusted partner in food trading and export services.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-links">
+                    <li>Dubai, United Arab Emirates</li>
+                    <li>sales@alufuqintl.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Alufuq International. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Ingredients | Alufuq International</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Al'ufuq Logo">
+                Al'ufuq <span>International L.L.C.</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="horeca.html">HORECA Solutions</a></li>
+                <li><a href="export.html">Export Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span>&#9776;</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="category-hero"
+        style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=1600');">
+        <div class="hero-content">
+            <h1 style="color: white; text-shadow: 2px 2px 10px rgba(0,0,0,0.5);">Pastry & Bakery</h1>
+            <p>Premium Ingredients for Professional Bakers</p>
+        </div>
+    </section>
+
+    <!-- Brand Ticker -->
+    <div class="brand-ticker">
+        <div class="ticker-content">
+            <div class="brand-item"><img src="assets/brand-b1.png" alt="Bakery Brand 1"> </div>
+            <div class="brand-item"><img src="assets/brand-b2.png" alt="Bakery Brand 2"> </div>
+            <div class="brand-item"><img src="assets/brand-b3.png" alt="Bakery Brand 3"> </div>
+            <div class="brand-item"><img src="assets/brand-b4.png" alt="Bakery Brand 4"> </div>
+            <div class="brand-item"><img src="assets/brand-b5.png" alt="Bakery Brand 5"> </div>
+            <div class="brand-item"><img src="assets/brand-b6.png" alt="Bakery Brand 6"> </div>
+            <!-- Duplicate for infinite scroll -->
+            <div class="brand-item"><img src="assets/brand-b1.png" alt="Bakery Brand 1"> </div>
+            <div class="brand-item"><img src="assets/brand-b2.png" alt="Bakery Brand 2"> </div>
+            <div class="brand-item"><img src="assets/brand-b3.png" alt="Bakery Brand 3"> </div>
+            <div class="brand-item"><img src="assets/brand-b4.png" alt="Bakery Brand 4"> </div>
+            <div class="brand-item"><img src="assets/brand-b5.png" alt="Bakery Brand 5"> </div>
+            <div class="brand-item"><img src="assets/brand-b6.png" alt="Bakery Brand 6"> </div>
+        </div>
+    </div>
+
+    <div class="small-cube-grid">
+        <div class="small-cube-item"
+            onclick="openProductModal('GLUTEN', 'High-quality vital wheat gluten for bakery applications.', ['1 X 10KG BAGS'], 'assets/p-gluten.png')">
+            <div class="small-cube-img"><img src="assets/p-gluten.png" alt="Gluten"></div>
+            <h3>Gluten</h3>
+            <p>High-quality vital wheat gluten.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('OAT FLAKES', 'Premium rolled oats for healthy baking and cereals.', ['1 X 10KG BAG', '24 X 400GM BAGS'], 'assets/p-oats.png')">
+            <div class="small-cube-img"><img src="assets/p-oats.png" alt="Oat Flakes"></div>
+            <h3>Oat Flakes</h3>
+            <p>Premium rolled oats for baking.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('DRY YEAST', 'Highly active dry yeast for consistent fermentation.', ['20 X 500GM'], 'assets/p-yeast.png')">
+            <div class="small-cube-img"><img src="assets/p-yeast.png" alt="Instant Dry Yeast"></div>
+            <h3>Dry Yeast</h3>
+            <p>Highly active yeast for fermentation.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('FRUIT FILLINGS', 'Rich and delicious fruit fillings for pastries and cakes.', ['6 X 2.7KG TINS'], 'assets/p-fruit-fillings.png')">
+            <div class="small-cube-img"><img src="assets/p-fruit-fillings.png" alt="Fruit Fillings"></div>
+            <h3>Fruit Fillings</h3>
+            <p>Delicious fruit fillings for pastries.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('GLAZING GEL', 'Mirror-finish glazing gel for professional pastry presentation.', ['1 X 3KG', '1 X 5KG'], 'assets/p-glazing-gel.png')">
+            <div class="small-cube-img"><img src="assets/p-glazing-gel.png" alt="Glazing Gel"></div>
+            <h3>Glazing Gel</h3>
+            <p>Mirror-finish gel for pastries.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('PIZZA FLOUR', 'High-protein Italian pizza flour for the perfect crust.', ['1 X 10KG', '1 X 25KG', '1 X 50KG'], 'assets/p-pizza-flour.png')">
+            <div class="small-cube-img"><img src="assets/p-pizza-flour.png" alt="Pizza Flour"></div>
+            <h3>Pizza Flour</h3>
+            <p>High-protein flour for the perfect crust.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('CASTER SUGAR', 'Fine-grained caster sugar for delicate baking.', ['1 X 25KG BAGS'], 'assets/p-caster-sugar.png')">
+            <div class="small-cube-img"><img src="assets/p-caster-sugar.png" alt="Caster Sugar"></div>
+            <h3>Caster Sugar</h3>
+            <p>Fine-grained sugar for baking.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('DARK BROWN SUGAR', 'Rich dark brown sugar for deep flavor profiles.', ['10 X 500GM', '10 X 1KG', '1 X 10KG'], 'assets/p-brown-sugar.png')">
+            <div class="small-cube-img"><img src="assets/p-brown-sugar.png" alt="Dark Brown Sugar"></div>
+            <h3>Dark Brown Sugar</h3>
+            <p>Rich brown sugar for deep flavor.</p>
+            <span>View</span>
+        </div>
+
+        <div class="small-cube-item"
+            onclick="openProductModal('COMPOUND CHOCOLATE BUTTONS', 'Rich dark, milk and white chocolate for deep flavor profiles.', ['10 X 500GM', '1 X 1KG', '4 X 2.5KG'], 'assets/P-COMPOUND CHOCOLATE.PNG')">
+            <div class="small-cube-img"><img src="assets/P-COMPOUND CHOCOLATE.PNG" alt="Compound Chocolate Buttons">
+            </div>
+            <h3>Compound Chocolate Buttons</h3>
+            <p>Rich dark, milk and white chocolate for deep flavor.</p>
+            <span>View</span>
+        </div>
+        <div class="small-cube-item"
+            onclick="openProductModal('COMPOUND CHOCOLATE BLOCKS', 'Rich dark, milk and white chocolate for deep flavor profiles.', ['2.5KG', '5KG'], 'assets/P-COMPOUND BLOCK.PNG')">
+            <div class="small-cube-img"><img src="assets/P-COMPOUND BLOCK.PNG" alt="Compound Chocolate Blocks">
+            </div>
+            <h3>Compound Chocolate Blocks</h3>
+            <p>Rich dark, milk and white chocolate for deep flavor.</p>
+            <span>View</span>
+        </div>
+        <div class="small-cube-item"
+            onclick="openProductModal('COCOA POWDER', 'Rich dark, milk and white chocolate for deep flavor profiles.', ['6 X 500GM', '1 X 1KG'], 'assets/P-COCOA.PNG')">
+            <div class="small-cube-img"><img src="assets/P-COCOA.PNG" alt="Compound Chocolate Blocks">
+            </div>
+            <h3>Cocoa Powder</h3>
+            <p>Rich dark, milk and white chocolate for deep flavor.</p>
+            <span>View</span>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="product-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProductModal()">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalTitle">Product Name</h2>
+                <p id="modalDesc">Detailed description goes here.</p>
+            </div>
+            <div class="modal-body">
+                <h3>Available Packaging Sizes</h3>
+                <div id="sizeGrid" class="size-grid">
+                    <!-- Sizes will be injected here -->
+                </div>
+                <div style="margin-top: 2rem; text-align: center;">
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%;">Inquire Now</a>
+                </div>
+                <div class="availability-note">
+                    * Based on availability for the packaging and branding variations.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Al'ufuq International L.L.C.</h4>
+                <p>Your trusted partner in food trading and export services.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-links">
+                    <li>Dubai, United Arab Emirates</li>
+                    <li>sales@alufuqintl.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Alufuq International. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
