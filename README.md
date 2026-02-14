@@ -14,7 +14,7 @@ A modern, premium, responsive website for a Dubai-based food trading company.
 ## Customization
 
 ### Images
-The `assets/` folder is currently empty as the image generation service was unavailable. Please add your own high-quality images:
+The `` folder is currently empty as the image generation service was unavailable. Please add your own high-quality images:
 1.  `hero-bg.jpg` (For Homepage)
 2.  `about-us.jpg` (For About Section)
 3.  `products-bg.jpg` (For Products Header)

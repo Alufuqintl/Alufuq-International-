@@ -201,35 +201,35 @@ header {
 
 /* Page Specific Hero Images */
 .hero-home {
-    background-image: url('assets/hero-bg.jpg');
+    background-image: url('hero-bg.jpg');
 }
 
 .hero-about {
-    background-image: url('assets/hero-bg.jpg');
+    background-image: url('hero-bg.jpg');
     min-height: 50vh;
     height: 50vh;
 }
 
 .hero-products {
-    background-image: url('assets/products-bg.jpg');
+    background-image: url('products-bg.jpg');
     min-height: 50vh;
     height: 50vh;
 }
 
 .hero-horeca {
-    background-image: url('assets/horeca-bg.jpg');
+    background-image: url('horeca-bg.jpg');
     min-height: 50vh;
     height: 50vh;
 }
 
 .hero-export {
-    background-image: url('assets/export-bg.jpg');
+    background-image: url('export-bg.jpg');
     min-height: 50vh;
     height: 50vh;
 }
 
 .hero-contact {
-    background-image: url('assets/contact-bg.jpg');
+    background-image: url('contact-bg.jpg');
     min-height: 40vh;
     height: 40vh;
 }
