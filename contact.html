@@ -85,16 +85,71 @@
             <!-- Form -->
             <div class="about-image"
                 style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 100%;">
-                <div style="text-align: center; padding: 2rem;">
-                    <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Send Us an Email</h3>
-                    <p style="margin-bottom: 2rem; color: #666;">
-                        Please click the button below to open your email client and send us your inquiry directly.
-                    </p>
-                    <a href="mailto:sales@alufuqintl.com?subject=Inquiry from Website" class="btn btn-primary"
-                        style="display: inline-block; text-decoration: none; font-size: 1.1rem; padding: 1rem 2rem;">
-                        &#x2709; Send Email to Sales
-                    </a>
-                </div>
+                <form id="contactForm" onsubmit="sendEmail(event)">
+                    <div style="margin-bottom: 1rem;">
+                        <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Your
+                            Name</label>
+                        <input type="text" id="name" required
+                            style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="company" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Company
+                            Name</label>
+                        <input type="text" id="company"
+                            style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    <!-- Email field removed from mailto body logic as it comes FROM their email, but kept for form completeness if needed, or we can just use it for validation -->
+                    <div style="margin-bottom: 1rem;">
+                        <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email
+                            Address</label>
+                        <input type="email" id="email" required
+                            style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Phone
+                            Number</label>
+                        <input type="tel" id="phone" required
+                            style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="requirement"
+                            style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Product Requirement</label>
+                        <select id="requirement"
+                            style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px;">
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="HORECA Supply">HORECA Supply</option>
+                            <option value="Export Order">Export Order</option>
+                            <option value="Dairy & Cheese">Dairy & Cheese</option>
+                            <option value="Grocery">Grocery Options</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="message"
+                            style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message</label>
+                        <textarea id="message" rows="4" required
+                            style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary"
+                        style="width: 100%; border: none; cursor: pointer;">Send Message</button>
+                </form>
+
+                <script>
+                    function sendEmail(event) {
+                        event.preventDefault();
+
+                        const name = document.getElementById('name').value;
+                        const company = document.getElementById('company').value;
+                        const phone = document.getElementById('phone').value;
+                        const requirement = document.getElementById('requirement').value;
+                        const message = document.getElementById('message').value;
+
+                        const subject = `Inquiry: ${requirement} - ${name}`;
+                        const body = `Name: ${name}%0D%0ACompany: ${company}%0D%0APhone: ${phone}%0D%0ARequirement: ${requirement}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+
+                        window.location.href = `mailto:sales@alufuqintl.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+                    }
+                </script>
             </div>
         </div>
     </section>
